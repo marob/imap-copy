@@ -1,0 +1,29 @@
+{
+  "name": "imap-copy",
+  "version": "1.0.0",
+  "description": "A tool to automatically copy unread messages from an imap source to an imap destination.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Maxime ROBERT <marob@smile.fr>",
+  "keywords": [
+    "imap",
+    "copy",
+    "mail",
+    "sync",
+    "synchronization"
+  ],
+  "bugs": {
+    "url": "https://github.com/marob/imap-copy/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/marob/imap-copy.git"
+  },
+  "license": "Apache 2",
+  "dependencies": {
+    "imap": "0.8.17",
+    "log4js": "0.6.37"
+  }
+}

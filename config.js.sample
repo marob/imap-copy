@@ -1,0 +1,28 @@
+var fs = require("fs");
+
+var config = {
+    src: {
+        user: 'src.user@provider1.com',
+        password: 'password',
+        host: 'imap.src.host',
+        port: 993,
+        tls: true,
+        tlsOptions: {
+            // ca: fs.readFileSync('imap.src.host.cer')
+            // rejectUnauthorized: false
+        }
+    },
+    dest: {
+        user: 'dest.user@provider2.com',
+        password: 'password',
+        host: 'imap.dest.host',
+        port: 993,
+        tls: true,
+        tlsOptions: {
+            // ca: fs.readFileSync('imap.dest.host.cer')
+            // rejectUnauthorized: false
+        }
+    }
+};
+
+module.exports = config;
