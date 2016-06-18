@@ -92,7 +92,7 @@ function unseen() {
         loggerSrc.info('%s unread mail', results.length);
 
         if (results.length > 0) {
-            if (destReady && results.length > 1) {
+            if (destReady) {
                 fetchAndForward(results);
             } else {
                 untreatedResults = results;
