@@ -14,6 +14,8 @@ var untreatedResults;
 var tryReconnectSrc;
 var tryReconnectDest;
 
+loggerSrc.info('Starting...');
+
 var imapSrc = new Imap(config.src);
 imapSrc.on('error', function (err) {
     loggerSrc.error(err);
